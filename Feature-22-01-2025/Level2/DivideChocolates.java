@@ -8,6 +8,5 @@ public class DivideChocolates {
         int numOfChildren = sc.nextInt();
         System.out.println("The number of chocolates each child gets is " + (numOfChocolates / numOfChildren)
                 + " and the number of remaining chocolates are " + (numOfChocolates % numOfChildren));
-
     }
 }
