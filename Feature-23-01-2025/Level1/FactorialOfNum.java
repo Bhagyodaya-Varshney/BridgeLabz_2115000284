@@ -6,7 +6,10 @@ public class FactorialOfNum{
         int n = sc.nextInt();
         int factorial = 1;
         int i = 1;
-
+        if(n<0){
+            System.out.print("Factorial of negative number is not possible");
+            return;
+        }
         while (i <= num) {
             factorial *= i;
             i++;

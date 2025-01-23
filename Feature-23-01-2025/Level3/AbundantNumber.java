@@ -1,5 +1,3 @@
-package lvl3;
-
 import java.util.*;
 public class AbundantNumber {
     public static void main(String[] args) {
