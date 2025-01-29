@@ -7,3 +7,5 @@
 <p><b>DAY 8 (22 Jan 2025):</b>Practice the problems given in form of Assignment2 and uplaoded to Github and the Classroom.</p>
 <p><b>DAY 9 (23 Jan 2025):</b>Practice the problems given in form of Assignment3 and uplaoded to Github and the Classroom.</p>
 <p><b>DAY 10 (24 Jan 2025):</b>Practice the problems given in form of Assignment4 and uplaoded to Github and the Classroom. Practice problems are related to Java Arrays.</p>
+<p><b>DAY 10 (27 Jan 2025):</b>Practice the problems given in form of Assignment5 and uplaoded to Github and the Classroom. Practice problems are related to Java Methods.</p>
+<p><b>DAY 10 (28 Jan 2025):</b>Practice the problems given in form of Assignment6 and uplaoded to Github and the Classroom. Practice problems are related to Java String and Java BuiltIn Functions.</p>
