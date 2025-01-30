@@ -5,21 +5,21 @@ public class ReverseString{
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Enter the String: ");
 		String st = sc.next();
-		char []stArray = st.toCharArray();
-			
-		int i=0,j=stArray.length-1;
-		while(i<j){
-			char temp = stArray[i];
-			stArray[i] = stArray[j];
-			stArray[j] = temp;
-			
-			i++;
-			j--;
-		}
+		String revString = reverseString(st);
+		System.out.print("Reversed String is: "+revString);
 		
-		String ans = "";
-		for(char ch : stArray)	ans = ans + ch;
-		System.out.print("Reversed String is: "+ans);
-
+	}
+	public static String reverseString(String st){
+		int i = 0, j = st.length() - 1;
+        char[] charArray = new char[st.length()];
+        
+        while (i <= j) {
+            charArray[i] = st.charAt(j);
+            charArray[j] = st.charAt(i);
+            i++;
+            j--;
+        }
+        
+        return new String(charArray);
 	}
 }

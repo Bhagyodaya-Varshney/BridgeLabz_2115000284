@@ -5,13 +5,16 @@ public class ToggleCase{
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Enter the String: ");
 		String st = sc.nextLine();
-		StringBuilder ansSt = new StringBuilder();
-		for(char ch : st.toCharArray()){
-			if(Character.isLowerCase(ch))	ansSt.append(Character.toUpperCase(ch));	
-			else if(Character.isUpperCase(ch))	ansSt.append(Character.toLowerCase(ch));
-			else ansSt.append(ch);
+		String ans = findToggledStr(st);
+		System.out.print("Toggled String is: "+ans);
+	}
+	public static String findToggledStr(String st){
+		String ans = "";
+		for(int i=0;i<st.length();i++){
+			if(Character.isLowerCase(st.charAt(i)))	ans += Character.toUpperCase(st.charAt(i));
+			else if(Character.isUpperCase(st.charAt(i)))	ans += Character.toLowerCase(st.charAt(i));
+			else ans += st.charAt(i);
 		}
-		
-		System.out.print("Toggled String is: "+ansSt.toString());
+		return ans;
 	}
 }

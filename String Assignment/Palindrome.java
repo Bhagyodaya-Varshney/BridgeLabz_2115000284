@@ -6,18 +6,19 @@ public class Palindrome{
 		System.out.print("Enter the String: ");
 		String st = sc.next();
 			
+		if(isPalindrome(st))	System.out.print("Given String is Palindrome");
+		else	System.out.print("Given String is Not Palindrome");
+	}
+	public static boolean isPalindrome(String st){
 		int i=0,j=st.length()-1;
-		boolean isPalindrome = false;
 		while(i<=j){
 			if(st.charAt(i) != st.charAt(j)){
-				isPalindrome = false;
-				break;
+				return false;
 			}
-			isPalindrome = true;
 			i++;
 			j--;
 		}
-		if(isPalindrome)	System.out.print("Given String is Palindrome");
-		else	System.out.print("Given String is Not Palindrome");
+		
+		return true;
 	}
 }

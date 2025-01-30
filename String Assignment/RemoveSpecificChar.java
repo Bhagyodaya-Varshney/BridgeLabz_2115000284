@@ -7,13 +7,17 @@ public class RemoveSpecificChar{
 		String st = sc.nextLine();
 		System.out.print("Enter the Character to remove: ");
 		char c = sc.next().charAt(0);
-		
-		StringBuilder ans = new StringBuilder();
-		for(char ch : st.toCharArray()){
-			if(ch != c)	ans.append(ch);
-		}
 	
-	System.out.print(ans.toString());
+		String ans = charRemoveFunc(st,c);
+		System.out.print(ans);
 		
+	}
+	public static String charRemoveFunc(String st, char c){
+		String ans = "";
+		for(int i=0;i<st.length();i++){
+			if(c != st.charAt(i))	ans += st.charAt(i);
+		}
+		
+		return ans;
 	}
 }
