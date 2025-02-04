@@ -1,4 +1,4 @@
-class Student{
+public class Student{
     public int rollNumber;
     protected String name;
     private double cgpa;
@@ -8,7 +8,7 @@ class Student{
         this.cgpa = cgpa;
     }
     public double getCGPA(){
-        return cgpa;
+        return this.cgpa;
     }
     public void setCGPA(double cgpa){
         this.cgpa = cgpa;
@@ -25,11 +25,11 @@ class Student{
     }
 }
 
-class PostgraduateStudent extends Student{
+public class PostgraduateStudent extends Student{
     public PostgraduateStudent(int rollNumber, String name, double cgpa) {
         super(rollNumber, name, cgpa);
     }
-        public void displayPGDetails() {
+        public void displayDetails() {
             System.out.println("Postgraduate Student:");
             System.out.println("Roll Number: " + rollNumber);  
             System.out.println("Name: " + name);      
@@ -43,6 +43,6 @@ public class UniversityManagementSystem {
         student.setCGPA(7.8);
         System.out.println("Updated CGPA: " + student.getCGPA());
         PostgraduateStudent pgStudent = new PostgraduateStudent(2115000146, "SomeOne", 7.6);
-        pgStudent.displayPGDetails();
+        pgStudent.displayDetails();
     }
 }
