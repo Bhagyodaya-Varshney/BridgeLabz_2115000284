@@ -1,12 +1,55 @@
 <h1>Hii👋, I am Bhagyodaya Varshney</h1>
 <h2>Welcome to Bridge Labz Java CG-GLA Mathura 100 CodIn Hours</h2>
 
-<p><b>DAY 1-4 (15 Jan 2025 - 18 Jan 2025):</b>Understand the concept of GIT, GIT BASH and GITHUB and Practice the GIT Commands and Linux Command also.</p>
-<p><b>DAY 5 (19 Jan 2025):</b>Practice the problems given in form of Assignment1 and uplaoded to Github and the Classroom.</p>
-<p><b>DAY 6-7 (20 Jan 2025 - 21 Jan 2025):</b>Practice the problems given in form of Assignment1 and uplaoded to Github and the Classroom.</p>
-<p><b>DAY 8 (22 Jan 2025):</b>Practice the problems given in form of Assignment2 and uplaoded to Github and the Classroom.</p>
-<p><b>DAY 9 (23 Jan 2025):</b>Practice the problems given in form of Assignment3 and uplaoded to Github and the Classroom.</p>
-<p><b>DAY 10 (24 Jan 2025):</b>Practice the problems given in form of Assignment4 and uplaoded to Github and the Classroom. Practice problems are related to Java Arrays.</p>
-<p><b>DAY 11 (27 Jan 2025):</b>Practice the problems given in form of Assignment5 and uplaoded to Github and the Classroom. Practice problems are related to Java Methods.</p>
-<p><b>DAY 12 (28 Jan 2025):</b>Practice the problems given in form of Assignment6 and uplaoded to Github and the Classroom. Practice problems are related to Java String and Java BuiltIn Functions.</p>
-<p><b>DAY 13 (29 Jan 2025):</b>Practice the problems given in form of Assignment7 and uplaoded to Github and the Classroom. Practice problems are related to Java String and Java Class and Objects.</p>
+<h2>16-01-25</h2>
+<p>Installed Git Bash.</p>
+<p>Learned the basics of Git and GitHub.</p>
+
+<h2>17-01-25</h2>
+<p>Practiced basic Git Bash commands.</p>
+<p>Started working on IntelliJ IDEA for Java development.</p>
+
+<h2>18-01-25</h2>
+<p>Learned Java basic concepts.</p>
+<p>Practiced Java syntax for a better understanding of the language.</p>
+
+<h2>19-01-25</h2>
+<p>Covered Java fundamentals and basic syntax.</p>
+<p>Solved an assignment based on Java basics.</p>
+<p>Learned Git branching and how to manipulate GitHub data using Git and Git Bash.</p>
+<p>Practiced cloning projects from open-source repositories to the local environment.</p>
+
+<h2>22-01-25</h2>
+<p>Solved Level 1 assignment, focusing on Java basic syntax.</p>
+<p>Solved Level 2 assignment, with advanced Java programming elements.</p>
+<p>Strengthened understanding of beginner Java concepts.</p>
+
+<h2>25-01-25</h2>
+<p>Solved Level 1 assignment, focusing on Basics of Arrays in Java.</p>
+<p>Solved Level 2 assignment, with Multi-Dimensional Arrays in Java.</p>
+<p>Strengthened understanding of Arrays in Java concepts.</p>
+
+<h2>27-01-25</h2>
+<p>Solved Level 1 assignment, focusing on method calling using objects.</p>
+<p>Solved Level 2 assignment, focusing on calling of multiple methods using objects.</p>
+<p>Strengthened understanding of objects, methods, and function calls, with static method and without static methods.</p>
+
+<h2>28-01-25</h2>
+<p>Solved Level 3 assignment, focusing on multiple method calls with and without static methods.</p>
+<p>Learned about Cohesion and Coupling.</p>
+<p>Strengthened understanding of Methods and inter-module bonding and interdependencies within classes and between classes in Java concepts.</p>
+
+<h2>29-01-25</h2>
+<p>Solved Built-in functions assignment, focusing on some commonly used built-in functions.</p>
+<p>Learned about Association, Aggregation, and Composition.</p>
+<p>Strengthened understanding of Built-in functions and interdependencies between Objects in Java concepts.</p>
+
+<h2>31-01-25</h2>
+<p>Solved Class and Object assignment, focusing on how to call objects of a class and use them in Object-Oriented Programming rather than in Procedural Programming.</p>
+<p>Learned about Object Creation and different uses of abstract class, interface, and their implementation.</p>
+<p>Strengthened understanding of Classes and Objects using principles of Object-Oriented Programming.</p>
+
+<h2>02-02-25</h2>
+<p>Solved Level 1 Lab assignment, focusing on instance and class variables, practicing hands-on practice of Access Modifiers.</p>
+<p>Learned about Data hiding using access specifiers, local, class, and instance variables.</p>
+<p>Strengthened understanding and importance of data hiding and different ways of using local, class, and global variables with amalgamation of Access Specifiers.</p>
