@@ -1,0 +1,32 @@
+class LibraryManagementWithBooksAndAuthors{
+	public static void main(String[]args){
+		Author book = new Author("Physics Everywhere",1980,"HC VERMA","Physics Professor");
+		book.displayInfo();
+	}
+}
+class Book{
+	private String title;
+	private int publicationYear;
+	Book(String title, int publicationYear){
+		this.title = title;
+		this.publicationYear = publicationYear;
+	}
+	public void displayInfo(){
+		System.out.println("Book Name: "+title);
+		System.out.println("Book Publication Year: "+publicationYear);
+	}
+}
+class Author extends Book{
+	private String name, bio;
+	Author(String title, int publicationYear,String name, String bio){
+		super(title,publicationYear);
+		//super keyword used to access the parent class methods and variables.
+		this.name = name;
+		this.bio = bio;
+	}
+	public void displayInfo(){
+		super.displayInfo();
+		System.out.println("Book Author Name: "+name);
+		System.out.println("Book Author Bio: "+bio);
+	}
+}
