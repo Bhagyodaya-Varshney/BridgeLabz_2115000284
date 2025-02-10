@@ -54,3 +54,14 @@
 <h2>04-02-25</h2>
 <p>Solved Level 1 Lab assignment, focusing on Java this, static, final keywords and instanceof operator.</p>
 <p>Strengthened understanding and importance of this, static and final keywords in Java.</p>
+
+<h2>05-02-25</h2>
+<p>Learned about object modeling and Class Diagram in JAVA.</p>
+<p>Solved assignment on the above topics including in depth understancing of class and object diagrams.</p>
+<p>Learned and implemented sequence diagram of various Java programs.</p>
+<p>Hands-on practice of Assosiation , Aggregation , Composition.</p>
+<p>Strengthened understandings of has-a and in-a relationship.</p>
+
+<h2>06-02-25</h2>
+<p>Learned about inheritance in java including its various types such as -single,multi,multiple and heirarchical level.</p>
+<p>Gone through various concepts :- Method Overriding,constructor inheritence in java,polymorphism and inheritance ,and, Access Modifiers and inheritance.</p>
