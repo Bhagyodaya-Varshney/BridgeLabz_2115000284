@@ -1,0 +1,113 @@
+import java.util.*;
+import java.text.*;
+
+public class InsurancePolicyManagementSystem2 {
+
+    private static Map<String, InsurancePolicy> policyMap = new HashMap<>();
+    private static Map<String, InsurancePolicy> policyLinkedMap = new LinkedHashMap<>();
+    private static Map<Date, InsurancePolicy> policyTreeMap = new TreeMap<>();
+
+    public static void addPolicy(InsurancePolicy policy) {
+        policyMap.put(policy.getPolicyNumber(), policy);
+        policyLinkedMap.put(policy.getPolicyNumber(), policy);
+        policyTreeMap.put(policy.getExpiryDate(), policy);
+    }
+
+    public static InsurancePolicy getPolicyByNumber(String policyNumber) {
+        return policyMap.get(policyNumber);
+    }
+
+    public static List<InsurancePolicy> getPoliciesExpiringSoon() {
+        List<InsurancePolicy> expiringPolicies = new ArrayList<>();
+        Calendar calendar = Calendar.getInstance();
+        calendar.add(Calendar.DAY_OF_YEAR, 30);
+        Date thresholdDate = calendar.getTime();
+
+        for (InsurancePolicy policy : policyMap.values()) {
+            if (policy.getExpiryDate().before(thresholdDate)) {
+                expiringPolicies.add(policy);
+            }
+        }
+
+        return expiringPolicies;
+    }
+
+    public static List<InsurancePolicy> getPoliciesByPolicyholder(String policyholderName) {
+        List<InsurancePolicy> policies = new ArrayList<>();
+        for (InsurancePolicy policy : policyMap.values()) {
+            if (policy.getPolicyholderName().equalsIgnoreCase(policyholderName)) {
+                policies.add(policy);
+            }
+        }
+        return policies;
+    }
+
+    public static void removeExpiredPolicies() {
+        Date currentDate = new Date();
+        policyMap.values().removeIf(policy -> policy.getExpiryDate().before(currentDate));
+        policyLinkedMap.values().removeIf(policy -> policy.getExpiryDate().before(currentDate));
+        policyTreeMap.entrySet().removeIf(entry -> entry.getKey().before(currentDate));
+    }
+
+    public static void main(String[] args) throws ParseException {
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+
+        addPolicy(new InsurancePolicy("101001", "Ayush", sdf.parse("2025-06-11"), "Home", 200.50));
+        addPolicy(new InsurancePolicy("101002", "Anuj", sdf.parse("2025-01-20"), "Auto", 150.75));
+        addPolicy(new InsurancePolicy("101003", "Kunal", sdf.parse("2025-10-14"), "Home", 300.25));
+        addPolicy(new InsurancePolicy("101004", "Bhagyodaya", sdf.parse("2025-10-02"), "Health", 250.00));
+
+        System.out.println("Policy 101001: " + getPolicyByNumber("101001"));
+
+        System.out.println("Policies Expiring Soon: " + getPoliciesExpiringSoon());
+
+        System.out.println("Policies for Ayush: " + getPoliciesByPolicyholder("Ayush"));
+
+        removeExpiredPolicies();
+        System.out.println("Remaining Policies after removing expired ones: ");
+        policyMap.values().forEach(System.out::println);
+    }
+}
+
+class InsurancePolicy {
+    private String policyNumber;
+    private String policyholderName;
+    private Date expiryDate;
+    private String coverageType;
+    private double premiumAmount;
+
+    public InsurancePolicy(String policyNumber, String policyholderName, Date expiryDate, String coverageType, double premiumAmount) {
+        this.policyNumber = policyNumber;
+        this.policyholderName = policyholderName;
+        this.expiryDate = expiryDate;
+        this.coverageType = coverageType;
+        this.premiumAmount = premiumAmount;
+    }
+
+    public String getPolicyNumber() {
+        return policyNumber;
+    }
+
+    public String getPolicyholderName() {
+        return policyholderName;
+    }
+
+    public Date getExpiryDate() {
+        return expiryDate;
+    }
+
+    public String getCoverageType() {
+        return coverageType;
+    }
+
+    public double getPremiumAmount() {
+        return premiumAmount;
+    }
+
+    @Override
+    public String toString() {
+        return "PolicyNumber: " + policyNumber + ", Policyholder: " + policyholderName + 
+               ", ExpiryDate: " + expiryDate + ", Coverage: " + coverageType + 
+               ", Premium: " + premiumAmount;
+    }
+}
