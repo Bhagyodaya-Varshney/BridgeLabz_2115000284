@@ -85,3 +85,22 @@
 <p>Learned implementation and Syntax of Stack,Queues and HashMaps.</p>
 <p>Learned further more industrial usage git commands.</p>
 <p>Gone through HashCodes and how to Generate them.</p>
+<h2>15-02-25</h2>
+<p>Solved Daily Assignment , based on Searching , File Handling and Input Streams.</p>
+<p>Gone through how stringbuilder and stringbuffer differ in terms of threading , worked on internal working of all Searching algorithms.</p>
+<h2>17-02-25</h2>
+<p>Learned about Algorithms's Runtime Analysis and Big-O Notation.</p>
+<p>Gone through time and space complexity analysis,best,worst and average case complexities.</p>
+<p>Gone through practical Guidelines for Optimizing Java Code.</p>
+<p>Solved various problems on finding out the fastest searching algorithms.</p>
+<p>Solved various problems on finding out the fastest sorting algorithms.</p>
+<h2>18-02-25</h2>
+<p>Learned about Java Generics and Wildcards.</p>
+<p>Brushed up on interfaces and abstraction.</p>
+<p>Learned about Java Collections.</p>
+<h2>19-02-25</h2>
+<p>Submission of Java Generics assignment.</p>
+<p>Gone through Java Streams fundamentals .</p>
+<h2>20-02-25</h2>
+<p>Submission of collections assignment.</p>
+<p>Submission of Java Streams Assignment.</p>
